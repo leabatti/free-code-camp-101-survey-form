@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<meta lang="en">
+<link rel="stylesheet" href="styles.css">
+<body>
+<h1 id="title">freeCodeCamp Survey Form</h1>
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+<form id="survey-form">
+  <label id="name-label"><input id="name" type="text" placeholder="Enter your name" required />Enter your name</label>
+  <label id="email-label"><input id="email" type="email" placeholder="Enter your email" required />Enter your email</label>
+  <label id="number-label"><input type="number" id="number" pattern="[0-9]" min="13" max="120" placeholder="Enter your age" />Enter your age</label>
+  <div>
+  <select id="dropdown" name="genre">
+    <option value="">Choose your country</option>
+    <option value="1">Canada</option>
+    <option value="2">France</option>
+    <option value="3">Switzerland</option>
+    <option value="4">Argentina</option>
+    <option value="5">Mexico</option>
+  </select>
+  </div>
+<div>
+  <label for="man">Man<input type="radio" id="man" name="itself" value="man" checked></label>
+  <label for="woman">Woman<input type="radio" id="woman" name="itself" value="woman"></label>
+</div>
+<div>
+<label for="favorite-food">What's your favorite food?</label>
+<input type="checkbox" id="food1" name="food1" value="Bike">
+<label for="food1"> Icecream</label><br>
+<input type="checkbox" id="food2" name="food2" value="Car">
+<label for="food2"> Hamburger</label><br>
+<input type="checkbox" id="food3" name="food3" value="Boat">
+<label for="food3"> Pie</label><br>
+</div>
+<label for="tellusmore">Tell us more<input type="textarea" id="sur" placeholder="Tell us more of you..." />
+<input type="submit" id="submit" />
+<textarea id="tellusmore" name="tellusmore" rows="5" cols="40">
+</form>
+</body>
